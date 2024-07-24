@@ -20,25 +20,6 @@ body {
   .close {
     display: none;
   }
-  /*
-  .hero-img {
-    width: 100%;
-    height: 100vh;
-    background: url(images/Hero-image.svg);
-    background-size: cover;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-position-x: 20%;
-    background-position-y: 20%;
-    z-index: -1;
-    animation: Bellaintroload 3s forwards;
-    width: 50%;
-    height: 100%;
-    right: 0;
-    left: unset;
-    width: 42em;
-  }*/
 }
 
 header {
@@ -84,10 +65,12 @@ header {
         color: #1a1a1a;
         font-weight: 400;
         line-height: 27px;
+        padding: 12px;
       }
     }
 
     .sec-nav {
+      margin-top: -9px;
       a {
         background: #016f88;
         color: #fff;
@@ -101,10 +84,8 @@ header {
     display: none;
   }
 }
-
+//Hero
 .hero {
-  //background: red;
-  //max-width: 687px;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -171,6 +152,34 @@ header {
   }
 }
 
+//Logo
+
+.logo-box {
+  // margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid #bcbcbc;
+  border-bottom: 3px solid #bcbcbc;
+
+  .logo-images {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 40px;
+    flex-wrap: wrap;
+
+    img {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      width: 160px;
+      flex-grow: 1;
+      padding: 19px; //CHECK
+    }
+  }
+}
+
 @media only screen and (max-width: 680px) {
   body {
     //   background: red;
@@ -196,6 +205,7 @@ header {
     display: none;
     position: absolute;
     background: #016f88;
+    //  background: #000;
     width: 50%;
     top: -15px;
     right: -20px;
@@ -210,6 +220,7 @@ header {
       padding: 8px 16px;
       display: block;
       font-size: 1.4rem;
+      color: #fff;
     }
 
     .close {
@@ -227,5 +238,10 @@ header {
         width: 100%;
       }
     }
+  }
+}
+@media only screen and (min-width: 920px) {
+  body {
+    //  background: yellow;
   }
 }
