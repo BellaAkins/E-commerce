@@ -47,15 +47,15 @@ header {
   align-items: center;
   justify-content: center;
   height: 10vh;
-  margin: 28px;
+  margin: 30px;
   background: #fcfcfc;
-  background: yellow;
+  //  background: yellow;
   box-shadow: 0px 4px 4px 0px #0000001a;
 
   .logo {
     a {
       color: #000000;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: 500;
       line-height: 36px;
     }
@@ -65,9 +65,9 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: absolute;
     margin: 20px;
-    padding: 12px;
+    padding: 40px;
     top: 0;
     right: 0;
     left: 0;
@@ -96,70 +96,10 @@ header {
       }
     }
   }
-  /*
-    nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      position: absolute;
-      padding: 12px;
-      margin: 20px;
-      top: 0; //Takr it up
-      right: 0; //Extends it to the right
-      left: 0; //Extends to the left
-      flex-wrap: wrap;
-  
-      ul {
-        display: flex;
-        align-items: center;
-        gap: 10px 32px;
-        flex-wrap: wrap;
-  
-        a {
-          color: #4b5d68;
-          font-size: 1rem;
-          font-weight: 400;
-          line-height: 24px;
-  
-          &:hover {
-            color: #ccac00;
-          }
-  
-          &::after {
-            content: "";
-            width: 0;
-            height: 2px;
-            background: #ccac00;
-            display: block;
-            transition: 0.2s linear;
-          }
-  
-          &:hover::after {
-            width: 100%;
-          }
-        }
-  
-        .hero-cta {
-          display: flex;
-          width: fit-content;
-          align-items: center;
-          background: purple;
-          display: flex;
-          background: #ccac00;
-          color: #212353;
-          padding: 16px 18px;
-          gap: 8px;
-          border-radius: 20px;
-          font-weight: 600;
-          font-size: 1rem;
-  
-          &:hover {
-            background: transparent;
-            border: 1px solid #ccac00;
-          }
-        }
-      }
-    }*/
+
+  .signin {
+    display: none;
+  }
 }
 
 .hero {
@@ -169,9 +109,9 @@ header {
   justify-content: space-between;
   flex-direction: row;
 
-  // flex-grow: 1;
+  flex-grow: 1;
 
-  //flex-wrap: wrap;
+  flex-wrap: wrap;
   .hero-text {
     display: flex;
     flex-direction: column;
@@ -232,4 +172,60 @@ header {
 }
 
 @media only screen and (max-width: 680px) {
+  body {
+    //   background: red;
+    .menu,
+    .close {
+      display: block;
+      width: 40px;
+      cursor: pointer;
+    }
+  }
+
+  header {
+    .signin {
+      display: block;
+    }
+
+    .sec-nav {
+      display: none;
+    }
+  }
+
+  .navigation {
+    display: none;
+    position: absolute;
+    background: #016f88;
+    width: 50%;
+    top: -15px;
+    right: -20px;
+    height: 100vh;
+    z-index: 1;
+
+    li {
+      margin-top: 90px;
+    }
+
+    a {
+      padding: 8px 16px;
+      display: block;
+      font-size: 1.4rem;
+    }
+
+    .close {
+      margin: 32px;
+      position: absolute;
+      right: 0;
+      top: -13px;
+    }
+  }
+
+  .hero {
+    flex-wrap: wrap;
+    .hero-img {
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
