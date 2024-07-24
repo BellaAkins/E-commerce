@@ -1,1 +1,243 @@
-/*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+* a {
+  text-decoration: none;
+  cursor: pointer;
+}
+* li {
+  list-style: none;
+}
+
+body {
+  background: #fcfcfc;
+}
+body .menu,
+body .close {
+  display: none;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
+  margin: 30px;
+  background: #fcfcfc;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.1019607843);
+}
+header .logo a {
+  color: #000000;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 36px;
+}
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  margin: 20px;
+  padding: 40px;
+  top: 0;
+  right: 0;
+  left: 0;
+  flex-wrap: wrap;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  gap: 10px 32px;
+  flex-wrap: wrap;
+}
+header nav ul a {
+  font-size: 1.1rem;
+  color: #1a1a1a;
+  font-weight: 400;
+  line-height: 27px;
+  padding: 12px;
+}
+header nav .sec-nav {
+  margin-top: -9px;
+}
+header nav .sec-nav a {
+  background: #016f88;
+  color: #fff;
+  padding: 11px 15px;
+  border-radius: 43.06px;
+}
+header .signin {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-grow: 1;
+}
+.hero .hero-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 632px;
+  padding: 40px;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+.hero .hero-text h1 {
+  font-family: Poppins;
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 86.75px;
+  color: #000;
+}
+.hero .hero-text h1 span {
+  color: #016f88;
+}
+.hero .hero-text p {
+  color: #575757;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 36px;
+}
+.hero .hero-text .hero-ctas {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+}
+.hero .hero-text a {
+  background: #016f88;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 27px;
+  padding: 10px 18.5px;
+  border-radius: 10px;
+}
+.hero .hero-text .learn-more {
+  background: none;
+  color: #545454;
+}
+.hero .hero-text .learn-more img {
+  width: 14px;
+}
+
+.logo-box {
+  display: flex;
+  flex-direction: column;
+  border-top: 3px solid #bcbcbc;
+  border-bottom: 3px solid #bcbcbc;
+}
+.logo-box .logo-images {
+  display: flex;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.logo-box .logo-images img {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  width: 160px;
+  flex-grow: 1;
+  padding: 19px;
+}
+
+.legacy {
+  padding: 60px;
+  margin-top: 65px;
+}
+
+.legacy-box {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.legacy-box .legacy-text {
+  display: flex;
+  flex-direction: column;
+  gap: 25px 20px;
+}
+.legacy-box .legacy-text h1 {
+  font-size: 3.6rem;
+  font-weight: 500;
+  line-height: 78.03px;
+  color: #20373e;
+  max-width: 574.6px;
+}
+.legacy-box .legacy-text p {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 35.92px;
+  color: #464646;
+  max-width: 571px;
+}
+.legacy-box .legacy-text a {
+  background: #016f88;
+  color: #fbfbfb;
+  border-radius: 47px;
+  padding: 11px 25px;
+  width: 195px;
+  font-size: 1.49rem;
+  font-weight: 600;
+  line-height: 35.92px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 680px) {
+  body .menu,
+  body .close {
+    display: block;
+    width: 40px;
+    cursor: pointer;
+  }
+  header .signin {
+    display: block;
+  }
+  header .sec-nav {
+    display: none;
+  }
+  .navigation {
+    display: none;
+    position: absolute;
+    background: #016f88;
+    width: 50%;
+    top: -15px;
+    right: -20px;
+    height: 100vh;
+    z-index: 1;
+  }
+  .navigation li {
+    margin-top: 90px;
+  }
+  .navigation a {
+    padding: 8px 16px;
+    display: block;
+    font-size: 1.4rem;
+    color: #fff;
+  }
+  .navigation .close {
+    margin: 32px;
+    position: absolute;
+    right: 0;
+    top: -13px;
+  }
+  .hero {
+    flex-wrap: wrap;
+  }
+  .hero .hero-img img {
+    width: 100%;
+  }
+  .legacy-box {
+    flex-wrap: wrap;
+  }
+}/*# sourceMappingURL=style.css.map */
