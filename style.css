@@ -152,6 +152,7 @@ header .signin {
 .legacy {
   padding: 60px;
   margin-top: 65px;
+  background: red;
 }
 
 .legacy-box {
@@ -246,4 +247,4 @@ header .signin {
   .legacy-box .legacy-image img {
     width: 100%;
   }
-} /*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
