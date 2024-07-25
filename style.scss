@@ -156,28 +156,48 @@ header {
 
 .logo-box {
   // margin: 0 auto;
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   border-top: 3px solid #bcbcbc;
   border-bottom: 3px solid #bcbcbc;
 
   .logo-images {
-    display: flex;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
+    //display: flex;
+    //align-items: center;
+    //max-width: 1200px;
+    //margin: 0 auto;
+    // background: #fff;
     gap: 40px;
-    flex-wrap: wrap;
+    //  flex-wrap: wrap;
 
     img {
-      display: flex;
-      flex-direction: column;
-      gap: 35px;
-      width: 160px;
-      flex-grow: 1;
+      //   display: flex;
+      //  flex-direction: column;
+      //  gap: 35px;
+      //  width: 160px;
+      //  flex-grow: 1;
       padding: 19px; //CHECK
     }
   }
+}
+
+.logo-box {
+  padding: 30px;
+  // display: grid;
+
+  .logo-images {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    max-width: 1400px;
+    margin: 0 auto;
+    gap: 30px;
+
+    img {
+      width: 160px;
+    }
+  }
+
+  // grid-template-columns: repeat(2, 1fr);
 }
 
 //legacy
@@ -185,6 +205,7 @@ header {
 .legacy {
   padding: 60px;
   margin-top: 65px;
+  //background: red;
 }
 
 .legacy-box {
@@ -225,6 +246,150 @@ header {
       font-weight: 600;
       line-height: 35.92px;
       text-align: center;
+    }
+  }
+}
+
+//Products
+.product-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  display: none;
+  // background: yellow;
+
+  .product-text {
+    background: pink;
+    h3 {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 43.2px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #44585e;
+    }
+
+    h2 {
+      font-family: Poppins;
+      font-size: 3.6rem;
+      font-weight: 600;
+      line-height: 78.03px;
+      text-align: center;
+      color: #20373e;
+    }
+  }
+
+  .product-package {
+    display: flex;
+    .left-arrow,
+    .right-arrow {
+      //background: purple;
+    }
+
+    .product-boxes {
+      display: flex;
+      justify-content: center;
+      //  flex-direction: row;
+      //  flex-direction: column;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      margin: 0 auto;
+      .box {
+        background: green;
+        //  border-radius: 20px;
+      }
+    }
+  }
+}
+
+//Sales
+.sales {
+  background: yellow;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 30px;
+
+  .sales-text {
+    background: red;
+    position: relative;
+    h3 {
+      font-size: 2rem;
+      font-weight: 500;
+      line-height: 43.2px;
+      text-align: center;
+      color: #44585e;
+      text-transform: uppercase;
+    }
+
+    h2 {
+      font-size: 3.6rem;
+      font-weight: 600;
+      line-height: 78.03px;
+      text-align: center;
+      color: #20373e;
+    }
+
+    p {
+      display: flex;
+      gap: 8px;
+      margin-right: 15px;
+      // justify-content: right;
+      font-size: 1.418rem;
+      font-weight: 500;
+      line-height: 30.68px;
+      // text-align: right;
+      position: absolute;
+      right: 0;
+      top: 70px;
+      color: #44585e;
+
+      img {
+        width: 10px;
+      }
+    }
+  }
+
+  .sales-container {
+    display: flex;
+    justify-content: center;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px;
+    .sales-box {
+      background: purple;
+
+      .heart-box {
+        //  background: yellow;
+        display: flex;
+        justify-content: end;
+
+        img {
+          background: pink;
+          display: flex;
+        }
+      }
+
+      .sales-details {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+
+        .sales-cta {
+          background: red;
+          display: flex;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+
+          a {
+            //   background: yellow;
+            color: #000;
+          }
+        }
+      }
     }
   }
 }
@@ -289,15 +454,27 @@ header {
     }
   }
 
+  .logo-box {
+    .logo-images {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
   .legacy-box {
     flex-wrap: wrap;
 
     .legacy-image {
-      background: red;
+      //   background: red;
       img {
         width: 100%;
       }
     }
+  }
+
+  .left-arrow,
+  .right-arrow {
+    //background: purple;
+    display: none;
   }
 }
 @media only screen and (min-width: 920px) {
