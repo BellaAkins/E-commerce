@@ -240,8 +240,10 @@ header .signin {
   .legacy-box {
     flex-wrap: wrap;
   }
-<<<<<<< HEAD
-}/*# sourceMappingURL=style.css.map */
-=======
-}/*# sourceMappingURL=style.css.map */
->>>>>>> ac15a5f137b260fc01cca0a3c86f370c435cb30f
+  .legacy-box .legacy-image {
+    background: red;
+  }
+  .legacy-box .legacy-image img {
+    width: 100%;
+  }
+} /*# sourceMappingURL=style.css.map */
