@@ -16,6 +16,7 @@
 }
 
 body {
+  background: #fcfcfc;
   .menu,
   .close {
     display: none;
@@ -89,16 +90,15 @@ header {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
-
   flex-grow: 1;
-
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
   .hero-text {
     display: flex;
     flex-direction: column;
     max-width: 632px;
     padding: 40px;
     gap: 20px;
+    flex-wrap: wrap;
 
     h1 {
       font-family: Poppins;
@@ -180,6 +180,55 @@ header {
   }
 }
 
+//legacy
+
+.legacy {
+  padding: 60px;
+  margin-top: 65px;
+}
+
+.legacy-box {
+  display: flex;
+  flex-direction: row;
+  gap: 40px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .legacy-text {
+    display: flex;
+    flex-direction: column;
+    gap: 25px 20px;
+    h1 {
+      font-size: 3.6rem;
+      font-weight: 500;
+      line-height: 78.03px;
+      color: #20373e;
+      max-width: 574.6px;
+    }
+
+    p {
+      font-size: 1.5rem;
+      font-weight: 300;
+      line-height: 35.92px;
+      color: #464646;
+      max-width: 571px;
+    }
+
+    a {
+      background: #016f88;
+      color: #fbfbfb;
+      border-radius: 47px;
+      padding: 11px 25px;
+      width: 195px;
+      font-size: 1.49rem;
+      font-weight: 600;
+      line-height: 35.92px;
+      text-align: center;
+    }
+  }
+}
+
 @media only screen and (max-width: 680px) {
   body {
     //   background: red;
@@ -239,9 +288,24 @@ header {
       }
     }
   }
+
+  .legacy-box {
+    flex-wrap: wrap;
+
+    .legacy-image {
+      background: red;
+      img {
+        width: 100%;
+      }
+    }
+  }
 }
 @media only screen and (min-width: 920px) {
   body {
     //  background: yellow;
+  }
+
+  .hero {
+    // flex-wrap: wrap;
   }
 }
