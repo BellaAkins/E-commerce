@@ -304,14 +304,14 @@ header {
 
 //Sales
 .sales {
-  background: yellow;
+  //background: yellow;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 30px;
 
   .sales-text {
-    background: red;
+    // background: red;
     position: relative;
     h3 {
       font-size: 2rem;
@@ -357,9 +357,20 @@ header {
     flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
-    gap: 30px;
+    gap: 30px 50px;
+    padding: 40px;
+
     .sales-box {
-      background: purple;
+      //   background: purple;
+      background: linear-gradient(
+        306.31deg,
+        #e3e8e3 2.87%,
+        #ddf9ff 49.15%,
+        #ffffff 192.08%
+      );
+
+      border-radius: 18px;
+      padding: 30px;
 
       .heart-box {
         //  background: yellow;
@@ -367,8 +378,15 @@ header {
         justify-content: end;
 
         img {
-          background: pink;
+          //  background: pink;
           display: flex;
+        }
+      }
+
+      .sales-image {
+        img {
+          width: 250px;
+          margin: 0 auto;
         }
       }
 
@@ -376,19 +394,53 @@ header {
         display: flex;
         justify-content: space-between;
         position: relative;
+        gap: 25px 30px;
+        //  background: red;
+        padding: 5px;
+        // margin-top: 100px;
+        .sales-details-text {
+          h3 {
+            font-family: Poppins;
+            font-size: 1.3rem;
+            font-weight: 500;
+            line-height: 32.4px;
+          }
+        }
 
         .sales-cta {
-          background: red;
+          //   background: red;
+          background: #016f88;
           display: flex;
           position: absolute;
+          border-radius: 68px;
           right: 0;
           bottom: 0;
 
           a {
             //   background: yellow;
-            color: #000;
+            color: #fff;
+            text-transform: uppercase;
+            padding: 8.82px;
           }
         }
+      }
+    }
+
+    .glasses {
+      // background: green;
+
+      .sales-details {
+        //       background: purple;
+        margin-top: 90px;
+      }
+    }
+
+    .glass {
+      //   background: green;
+
+      .sales-details {
+        //       background: purple;
+        margin-top: 40px;
       }
     }
   }
