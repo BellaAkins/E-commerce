@@ -235,14 +235,12 @@ header .signin {
 }
 
 .sales {
-  background: yellow;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding: 30px;
 }
 .sales .sales-text {
-  background: red;
   position: relative;
 }
 .sales .sales-text h3 {
@@ -281,33 +279,56 @@ header .signin {
   flex-wrap: wrap;
   max-width: 1200px;
   margin: 0 auto;
-  gap: 30px;
+  gap: 30px 50px;
+  padding: 40px;
 }
 .sales .sales-container .sales-box {
-  background: purple;
+  background: linear-gradient(306.31deg, #e3e8e3 2.87%, #ddf9ff 49.15%, #ffffff 192.08%);
+  border-radius: 18px;
+  padding: 30px;
 }
 .sales .sales-container .sales-box .heart-box {
   display: flex;
   justify-content: end;
 }
 .sales .sales-container .sales-box .heart-box img {
-  background: pink;
   display: flex;
+}
+.sales .sales-container .sales-box .sales-image img {
+  width: 250px;
+  margin: 0 auto;
 }
 .sales .sales-container .sales-box .sales-details {
   display: flex;
   justify-content: space-between;
   position: relative;
+  gap: 25px 30px;
+  padding: 5px;
+}
+.sales .sales-container .sales-box .sales-details .sales-details-text h3 {
+  font-family: Poppins;
+  font-size: 1.3rem;
+  font-weight: 500;
+  line-height: 32.4px;
 }
 .sales .sales-container .sales-box .sales-details .sales-cta {
-  background: red;
+  background: #016f88;
   display: flex;
   position: absolute;
+  border-radius: 68px;
   right: 0;
   bottom: 0;
 }
 .sales .sales-container .sales-box .sales-details .sales-cta a {
-  color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 8.82px;
+}
+.sales .sales-container .glasses .sales-details {
+  margin-top: 90px;
+}
+.sales .sales-container .glass .sales-details {
+  margin-top: 40px;
 }
 
 @media only screen and (max-width: 680px) {
