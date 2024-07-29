@@ -280,7 +280,7 @@ header .signin {
 .sales .sales-container .sales-box {
   background: linear-gradient(306.31deg, #e3e8e3 2.87%, #ddf9ff 49.15%, #ffffff 192.08%);
   border-radius: 18px;
-  padding: 30px;
+  padding: 20px;
 }
 .sales .sales-container .sales-box .heart-box {
   display: flex;
@@ -323,6 +323,83 @@ header .signin {
   margin-top: 90px;
 }
 .sales .sales-container .glass .sales-details {
+  margin-top: 40px;
+}
+
+.collections .shirt .sales-details {
+  margin-top: 90px;
+}
+.collections .jacket .sales-details {
+  margin-top: 35px;
+}
+
+.testimonials .testimonials-text h3 {
+  color: #464646;
+  font-size: 2rem;
+  font-weight: 500;
+  text-align: center;
+  line-height: 43.2px;
+  color: #44585e;
+}
+.testimonials .testimonials-text h2 {
+  color: #000;
+  font-size: 3.6rem;
+  font-weight: 600;
+  line-height: 69.4px;
+  text-align: center;
+}
+.testimonials .sales-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px 50px;
+  padding: 40px;
+}
+.testimonials .sales-container .sales-box {
+  border: 0.98px solid #000000;
+  background: none;
+  border-radius: 18px;
+}
+.testimonials .sales-container .sales-box .sales-image img {
+  width: 100px;
+  margin: 0 auto;
+  display: flex;
+}
+.testimonials .sales-container .sales-box .sales-details {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 5px;
+  margin-top: 40px;
+}
+.testimonials .sales-container .sales-box .sales-details .sales-details-text {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  text-align: center;
+}
+.testimonials .sales-container .sales-box .sales-details .sales-details-text h3 {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 43.2px;
+}
+.testimonials .sales-container .sales-box .sales-details .sales-details-text p {
+  font-size: 1.3rem;
+  font-weight: 300;
+  line-height: 30px;
+  text-align: center;
+  color: #464646;
+  max-width: 301px;
+}
+.testimonials .sales-container .sales-box .sales-details .sales-details-text .ratings {
+  margin-top: 30px;
+}
+.testimonials .sales-container .glasses .sales-details {
+  margin-top: 60px;
+}
+.testimonials .sales-container .glass .sales-details {
   margin-top: 40px;
 }
 
@@ -379,5 +456,11 @@ header .signin {
   .left-arrow,
   .right-arrow {
     display: none;
+  }
+  .collections .sales-text p {
+    top: 0;
+  }
+  .collections .sales-text p img {
+    width: 8px;
   }
 }/*# sourceMappingURL=style.css.map */
