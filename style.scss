@@ -92,6 +92,7 @@ header {
   flex-direction: row;
   flex-grow: 1;
   // flex-wrap: wrap;
+  // display: none;
   .hero-text {
     display: flex;
     flex-direction: column;
@@ -167,7 +168,7 @@ header {
     //max-width: 1200px;
     //margin: 0 auto;
     // background: #fff;
-    gap: 40px;
+    //   gap: 40px;
     //  flex-wrap: wrap;
 
     img {
@@ -176,7 +177,7 @@ header {
       //  gap: 35px;
       //  width: 160px;
       //  flex-grow: 1;
-      padding: 19px; //CHECK
+      //   padding: 19px; //CHECK
     }
   }
 }
@@ -185,15 +186,22 @@ header {
   padding: 30px;
   // display: grid;
 
+  // display: none;
+
   .logo-images {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
-    max-width: 1400px;
+    // grid-template-columns: repeat(2, auto);
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    // background: yellow;
+    max-width: 1200px;
     margin: 0 auto;
     gap: 30px;
 
     img {
-      width: 160px;
+      //width: 160px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
   }
 
@@ -206,6 +214,7 @@ header {
   padding: 60px;
   margin-top: 65px;
   //background: red;
+  //  display: none;
 }
 
 .legacy-box {
@@ -310,6 +319,7 @@ header {
   flex-wrap: wrap;
   padding: 30px;
 
+  // display: none;
   .sales-text {
     // background: red;
     position: relative;
@@ -508,7 +518,7 @@ header {
 
   .logo-box {
     .logo-images {
-      grid-template-columns: repeat(2, 1fr);
+      //   grid-template-columns: repeat(2, 1fr);
     }
   }
 
