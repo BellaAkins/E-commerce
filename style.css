@@ -130,25 +130,20 @@ header .signin {
   border-top: 3px solid #bcbcbc;
   border-bottom: 3px solid #bcbcbc;
 }
-.logo-box .logo-images {
-  gap: 40px;
-}
-.logo-box .logo-images img {
-  padding: 19px;
-}
-
 .logo-box {
   padding: 30px;
 }
 .logo-box .logo-images {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  max-width: 1400px;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  max-width: 1200px;
   margin: 0 auto;
   gap: 30px;
 }
 .logo-box .logo-images img {
-  width: 160px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
 .legacy {
@@ -374,9 +369,6 @@ header .signin {
   }
   .hero .hero-img img {
     width: 100%;
-  }
-  .logo-box .logo-images {
-    grid-template-columns: repeat(2, 1fr);
   }
   .legacy-box {
     flex-wrap: wrap;
