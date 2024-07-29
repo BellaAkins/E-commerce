@@ -380,7 +380,7 @@ header {
       );
 
       border-radius: 18px;
-      padding: 30px;
+      padding: 20px;
 
       .heart-box {
         //  background: yellow;
@@ -456,6 +456,124 @@ header {
   }
 }
 
+//Collections
+.collections {
+  //background: red;
+
+  .shirt {
+    .sales-details {
+      //       background: purple;
+      margin-top: 90px;
+    }
+  }
+
+  .jacket {
+    .sales-details {
+      //       background: purple;
+      margin-top: 35px;
+    }
+  }
+}
+
+//Testimonials
+.testimonials {
+  .testimonials-text {
+    h3 {
+      color: #464646;
+      font-size: 2rem;
+      font-weight: 500;
+      text-align: center;
+      line-height: 43.2px;
+      color: #44585e;
+    }
+
+    h2 {
+      color: #000;
+      font-size: 3.6rem;
+      font-weight: 600;
+      line-height: 69.4px;
+      text-align: center;
+    }
+  }
+
+  .sales-container {
+    display: flex;
+    justify-content: center;
+    // flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 30px 50px;
+    padding: 40px;
+
+    .sales-box {
+      //   background: purple;
+      border: 0.98px solid #000000;
+      background: none;
+      border-radius: 18px;
+
+      .sales-image {
+        img {
+          width: 100px;
+          margin: 0 auto;
+          display: flex;
+        }
+      }
+
+      .sales-details {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        //    background: green;
+        padding: 5px;
+        margin-top: 40px;
+        .sales-details-text {
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          text-align: center;
+          h3 {
+            font-size: 2rem;
+            font-weight: 500;
+            line-height: 43.2px;
+          }
+
+          p {
+            font-size: 1.3rem;
+            font-weight: 300;
+            line-height: 30px;
+            text-align: center;
+            color: #464646;
+            max-width: 301px;
+          }
+
+          .ratings {
+            margin-top: 30px;
+          }
+        }
+      }
+    }
+
+    .glasses {
+      // background: green;
+
+      .sales-details {
+        //       background: purple;
+        margin-top: 60px;
+      }
+    }
+
+    .glass {
+      //   background: green;
+
+      .sales-details {
+        //       background: purple;
+        margin-top: 40px;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: 680px) {
   body {
     //   background: red;
@@ -516,12 +634,6 @@ header {
     }
   }
 
-  .logo-box {
-    .logo-images {
-      //   grid-template-columns: repeat(2, 1fr);
-    }
-  }
-
   .legacy-box {
     flex-wrap: wrap;
 
@@ -535,8 +647,18 @@ header {
 
   .left-arrow,
   .right-arrow {
-    //background: purple;
     display: none;
+  }
+  .collections {
+    .sales-text {
+      p {
+        top: 0;
+
+        img {
+          width: 8px;
+        }
+      }
+    }
   }
 }
 @media only screen and (min-width: 920px) {
@@ -545,6 +667,5 @@ header {
   }
 
   .hero {
-    // flex-wrap: wrap;
   }
 }
