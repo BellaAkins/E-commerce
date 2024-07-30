@@ -243,6 +243,9 @@ header .signin {
     }
   }
 }*/
+.products {
+  display: none;
+}
 .products .product-text h3 {
   font-size: 2rem;
   font-weight: 500;
@@ -268,12 +271,15 @@ header .signin {
 }
 
 .products-container .arrow {
-  width: 25px;
   cursor: pointer;
   text-align: center;
   color: #000;
   color: #545454;
   transform: translateY(-50%);
+}
+
+.mumu {
+  width: 12%;
 }
 
 .products-container .arrow:first-child {
@@ -342,6 +348,7 @@ header .signin {
   flex-direction: column;
   flex-wrap: wrap;
   padding: 30px;
+  display: none;
 }
 .sales .sales-text {
   position: relative;
@@ -389,6 +396,11 @@ header .signin {
   background: linear-gradient(306.31deg, #e3e8e3 2.87%, #ddf9ff 49.15%, #ffffff 192.08%);
   border-radius: 18px;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  flex-grow: 1;
+  padding: 20px;
 }
 .sales .sales-container .sales-box .heart-box {
   display: flex;
@@ -434,6 +446,9 @@ header .signin {
   margin-top: 40px;
 }
 
+.collections {
+  display: block;
+}
 .collections .shirt .sales-details {
   margin-top: 90px;
 }
@@ -441,6 +456,9 @@ header .signin {
   margin-top: 35px;
 }
 
+.testimonials {
+  display: block;
+}
 .testimonials .testimonials-text h3 {
   color: #464646;
   font-size: 2rem;
@@ -519,6 +537,7 @@ header .signin {
 footer {
   background: #016f88;
   color: #fff;
+  display: none;
 }
 footer .footer-container {
   display: flex;
