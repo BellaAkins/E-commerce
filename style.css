@@ -648,7 +648,7 @@ footer .privacy {
   body .menu,
   body .close {
     display: block;
-    width: 40px;
+    width: 20px;
     cursor: pointer;
   }
   header .signin {
