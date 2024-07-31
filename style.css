@@ -806,13 +806,19 @@ footer .privacy {
   .legacy-box .legacy-image img {
     width: 100%;
   }
+  .collections .sales-text,
+  .sales .sales-text {
+    background: red;
+  }
   .collections .sales-text p,
   .sales .sales-text p {
-    top: 0;
+    top: -13px;
+    right: -8px;
+    background: yellow;
   }
   .collections .sales-text p img,
   .sales .sales-text p img {
-    width: 8px;
+    width: 6px;
   }
   footer .footer-container .text p {
     width: 310px;
