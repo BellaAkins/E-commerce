@@ -662,8 +662,9 @@ footer .privacy {
     display: none;
     position: absolute;
     background: #016f88;
+    width: 100%;
     top: -15px;
-    right: -20px;
+    right: -8px;
     height: 100vh;
     z-index: 1;
     padding: 0;
