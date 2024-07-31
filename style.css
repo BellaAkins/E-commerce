@@ -11,6 +11,9 @@
 * li {
   list-style: none;
 }
+* img {
+  animation: Bellaintroload 3s forwards;
+}
 
 body {
   background: #fcfcfc;
@@ -664,17 +667,21 @@ footer .privacy {
     right: -20px;
     height: 100vh;
     z-index: 1;
-    transition: transform 0.1s linear;
+    padding: 0;
+    animation: Bellaintroload 1s forwards;
   }
-  .navigation li {
-    margin-top: 90px;
-  }
-  .navigation a {
-    padding: 8px 16px;
-    display: block;
-    font-size: 1.5rem;
+  .navigation li a {
     color: #fff;
+    font-weight: 400;
+    line-height: 27px;
+    padding: 16px 32px;
+    display: block;
+    font-size: 1.4rem;
+    margin-top: 55px;
     text-transform: uppercase;
+  }
+  .navigation li a:hover {
+    color: #000;
   }
   .navigation .close {
     margin: 32px;
@@ -715,5 +722,15 @@ footer .privacy {
 @media screen and (max-width: 600px) {
   .products-container .products-carousel {
     grid-auto-columns: 100%;
+  }
+}
+@keyframes Bellaintroload {
+  from {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+            clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  to {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
 }/*# sourceMappingURL=style.css.map */
