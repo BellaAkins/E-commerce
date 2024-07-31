@@ -32,7 +32,7 @@ header {
 }
 header .logo a {
   color: #000000;
-  font-size: 1rem;
+  font-size: 1.6rem;
   font-weight: 500;
   line-height: 36px;
 }
@@ -268,19 +268,18 @@ header .signin {
 }
 
 .products-container .arrow {
+  width: 28px;
   cursor: pointer;
   text-align: center;
   color: #000;
   color: #545454;
   transform: translateY(-50%);
-}
-
-.mumu {
-  width: 12%;
+  transition: transform 0.1s linear;
 }
 
 .products-container .arrow:first-child {
   left: -1px;
+  width: 17px;
 }
 
 .products-container .arrow:last-child {
@@ -534,7 +533,6 @@ header .signin {
 footer {
   background: #016f88;
   color: #fff;
-  display: none;
 }
 footer .footer-container {
   display: flex;
@@ -557,10 +555,9 @@ footer .footer-container .text .logo a {
 }
 footer .footer-container .text p {
   width: 410px;
-  font-size: 1rem;
+  font-size: 1.2rem;
   font-weight: 300;
   line-height: 24px;
-  color: #fff;
 }
 footer .footer-container .text .footer-icons {
   display: flex;
@@ -568,6 +565,7 @@ footer .footer-container .text .footer-icons {
 }
 footer .footer-container .links {
   padding: 8px;
+  padding: 10px 20px;
 }
 footer .footer-container .links ul {
   display: flex;
@@ -654,6 +652,9 @@ footer .privacy {
   header .sec-nav {
     display: none;
   }
+  header .logo a {
+    font-size: 1.2rem;
+  }
   .navigation {
     display: none;
     position: absolute;
@@ -663,6 +664,7 @@ footer .privacy {
     right: -20px;
     height: 100vh;
     z-index: 1;
+    transition: transform 0.1s linear;
   }
   .navigation li {
     margin-top: 90px;
@@ -670,14 +672,16 @@ footer .privacy {
   .navigation a {
     padding: 8px 16px;
     display: block;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
     color: #fff;
+    text-transform: uppercase;
   }
   .navigation .close {
     margin: 32px;
     position: absolute;
     right: 0;
     top: -13px;
+    width: 35px;
   }
   .hero {
     flex-wrap: wrap;
@@ -691,10 +695,6 @@ footer .privacy {
   .legacy-box .legacy-image img {
     width: 100%;
   }
-  .left-arrow,
-  .right-arrow {
-    display: none;
-  }
   .collections .sales-text p,
   .sales .sales-text p {
     top: 0;
@@ -702,6 +702,9 @@ footer .privacy {
   .collections .sales-text p img,
   .sales .sales-text p img {
     width: 8px;
+  }
+  footer .footer-container .text p {
+    width: 310px;
   }
 }
 @media screen and (max-width: 900px) {
