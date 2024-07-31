@@ -812,7 +812,7 @@ footer .privacy {
   }
   .collections .sales-text p,
   .sales .sales-text p {
-    top: -13px;
+    top: 15px;
     right: -8px;
     background: yellow;
   }
