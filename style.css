@@ -243,9 +243,6 @@ header .signin {
     }
   }
 }*/
-.products {
-  display: none;
-}
 .products .product-text h3 {
   font-size: 2rem;
   font-weight: 500;
