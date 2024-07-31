@@ -659,6 +659,7 @@ footer .privacy {
     font-size: 1.2rem;
   }
   .navigation {
+    display: none;
     position: absolute;
     background: #016f88;
     top: -15px;
