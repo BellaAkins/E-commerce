@@ -646,7 +646,7 @@ footer .privacy {
   body .menu,
   body .close {
     display: block;
-    width: 20px;
+    width: 26px;
     cursor: pointer;
   }
   header .signin {
@@ -659,10 +659,8 @@ footer .privacy {
     font-size: 1.2rem;
   }
   .navigation {
-    display: none;
     position: absolute;
     background: #016f88;
-    width: 50%;
     top: -15px;
     right: -20px;
     height: 100vh;
@@ -679,9 +677,11 @@ footer .privacy {
     font-size: 1.4rem;
     margin-top: 55px;
     text-transform: uppercase;
+    text-align: center;
   }
   .navigation li a:hover {
     color: #000;
+    font-weight: 700;
   }
   .navigation .close {
     margin: 32px;
