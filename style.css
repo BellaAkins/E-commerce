@@ -747,7 +747,7 @@ footer .privacy {
     font-size: 1.5rem;
   }
   .hero .hero-text .hero-ctas {
-    max-width: 250px;
+    max-width: 300px;
   }
   .hero .hero-text .hero-ctas a {
     font-size: 1rem;
@@ -806,15 +806,10 @@ footer .privacy {
   .legacy-box .legacy-image img {
     width: 100%;
   }
-  .collections .sales-text,
-  .sales .sales-text {
-    background: red;
-  }
   .collections .sales-text p,
   .sales .sales-text p {
     top: 43px;
     right: -8px;
-    background: black;
   }
   .collections .sales-text p img,
   .sales .sales-text p img {
