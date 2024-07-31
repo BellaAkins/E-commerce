@@ -709,7 +709,7 @@ footer {
       }
       p {
         width: 410px;
-        font-size: 1.2rem;
+        font-size: 1rem;
         font-weight: 300;
         line-height: 24px;
       }
@@ -810,7 +810,7 @@ footer {
     .menu,
     .close {
       display: block;
-      width: 20px;
+      width: 26px;
       cursor: pointer;
     }
   }
@@ -835,9 +835,10 @@ footer {
     display: none;
     position: absolute;
     background: #016f88;
-    width: 50%;
+    background: red;
+    width: 100%;
     top: -15px;
-    right: -20px;
+    right: -8px;
     height: 100vh;
     z-index: 1;
     padding: 0;
@@ -853,8 +854,10 @@ footer {
         font-size: 1.4rem;
         margin-top: 55px;
         text-transform: uppercase;
+        text-align: center;
         &:hover {
           color: #000;
+          font-weight: 700;
         }
       }
     }
