@@ -662,6 +662,7 @@ footer .privacy {
     display: none;
     position: absolute;
     background: #016f88;
+    background: red;
     width: 100%;
     top: -15px;
     right: -8px;
